@@ -23,11 +23,7 @@ Route::get('/test', function () {
 });
 
 //
-//Route::post('/458364705:AAHILj99Dn47JP1mbqpCtwpZbwOyRgJrcis/webhook', function () {
-//
-//});
-
-Route::post('/dream-team-bot', function () {
+Route::post('/458364705:AAHILj99Dn47JP1mbqpCtwpZbwOyRgJrcis/webhook', function () {
     $updates = Telegram::commandsHandler(true);
 
     return 'ok';
