@@ -26,7 +26,6 @@ class RealPidorCommand extends Command
         $this->replyWithMessage(['text' => 'идет сканирование чата...']);
         $this->replyWithMessage(['text' => 'Итак, настоящий пидор чата DreamTeam:']);
         $this->replyWithMessage(['text' => 'Олег Максимов!!!']);
-        $this->replyWithPhoto(['photo' => asset('images/oleg-pidor.jpg')]);
         $this->replyWithChatAction(['action' => Actions::TYPING]);
     }
 }
