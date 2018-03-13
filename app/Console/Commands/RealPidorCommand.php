@@ -22,7 +22,11 @@ class RealPidorCommand extends Command
      */
     public function handle($arguments)
     {
-        $this->replyWithMessage(['text' => '__расчехляем алгортимы проверки на пидора...__']);
+        $this->replyWithMessage(['text' => 'расчехляем алгортимы проверки на пидора...']);
+        $this->replyWithMessage(['text' => 'идет сканирование чата...']);
+        $this->replyWithMessage(['text' => 'Итак, настоящий пидор чата DreamTeam:']);
+        $this->replyWithMessage(['text' => 'Олег Максимов!!!']);
+//        $this->replyWithPhoto(['photo' => '']);
         $this->replyWithChatAction(['action' => Actions::TYPING]);
     }
 }
