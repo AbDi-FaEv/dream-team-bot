@@ -28,7 +28,7 @@ Route::get('/test', function () {
 //});
 
 Route::post('/dream-team-bot', function () {
-    $updates = Telegram::getWebhookUpdates();
+    $updates = Telegram::commandsHandler(true);
 
     return 'ok';
 });
