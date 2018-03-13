@@ -10,7 +10,7 @@ class RealPidorCommand extends Command
     /**
      * @var string Command Name
      */
-    protected $name = "real-pidor";
+    protected $name = "realpidor";
 
     /**
      * @var string Command Description
@@ -26,7 +26,7 @@ class RealPidorCommand extends Command
         $this->replyWithMessage(['text' => 'идет сканирование чата...']);
         $this->replyWithMessage(['text' => 'Итак, настоящий пидор чата DreamTeam:']);
         $this->replyWithMessage(['text' => 'Олег Максимов!!!']);
-//        $this->replyWithPhoto(['photo' => '']);
+        $this->replyWithPhoto(['photo' => asset('images/oleg-pidor.jpg')]);
         $this->replyWithChatAction(['action' => Actions::TYPING]);
     }
 }
